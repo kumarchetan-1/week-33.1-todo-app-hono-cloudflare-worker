@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "todo-app-hono-week-33-1-serverless",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-11-22",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "DATABASE_URL":"prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza19vQzRjc2FYemg2dzhpdmR2dThFZGciLCJhcGlfa2V5IjoiMDFLQVA1WktSUzRTQ0IwNDE5QVNLRzJIR0IiLCJ0ZW5hbnRfaWQiOiIyYmMxZDdiYjJiNjNiMTBiODg3MjM1ZmQ0ZWJiOWU5YWExMTA0ZThhMjczMzI0MTgyMDEwMjE1MjQ5MGU0NjQ3IiwiaW50ZXJuYWxfc2VjcmV0IjoiMjcxOWQ3YmItZGYxZS00MTk5LWE3MWYtMGNlZDZiYTVhNmU5In0.nArZlaftx6TAz6AEQyVdDRZd6TfRByO4fsBYIwXzk6E"
+  }
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "MY_KV_NAMESPACE",
+  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  //   }
+  // ],
+  // "r2_buckets": [
+  //   {
+  //     "binding": "MY_BUCKET",
+  //     "bucket_name": "my-bucket"
+  //   }
+  // ],
+  // "d1_databases": [
+  //   {
+  //     "binding": "MY_DB",
+  //     "database_name": "my-database",
+  //     "database_id": ""
+  //   }
+  // ],
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "todo-app-hono-week-33.1-serverless",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@noble/hashes": "^2.0.1",
+    "@prisma/client": "^7.0.0",
+    "@prisma/extension-accelerate": "^3.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "hono": "^4.10.6",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^7.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0"
+  }
+}
