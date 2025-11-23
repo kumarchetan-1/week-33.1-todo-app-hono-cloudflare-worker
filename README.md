@@ -31,8 +31,8 @@ A serverless Todo application built with Hono framework, deployed on Cloudflare 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd todo-app-hono-week-33.1-serverless
+git clone https://github.com/kumarchetan-1/week-33.1-todo-app-hono-cloudflare-worker.git
+cd week-33.1-todo-app-hono-cloudflare-worker
 ```
 
 2. Install dependencies:
@@ -231,8 +231,8 @@ The application includes comprehensive error handling:
 
 ## 📄 License
 
-[Add your license information here]
+Available under the MIT License.
 
 ## 🤝 Contributing
 
-[Add contribution guidelines if applicable]
+Contributions are welcome! Please feel free to submit an issue or a pull request.
