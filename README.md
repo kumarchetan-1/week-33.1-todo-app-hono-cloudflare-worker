@@ -49,10 +49,32 @@ npm run prisma:generate
 
 ### Environment Variables
 
-The application requires the following environment variables (configured in `wrangler.jsonc`):
+The application requires the following environment variables:
 
 - `DATABASE_URL`: Prisma Accelerate connection string or PostgreSQL connection URL
 - `JWT_SECRET`: Secret key for signing and verifying JWT tokens
+
+#### Local Development
+
+For local development, create a `.env` file in the root directory (see `.env.example`):
+
+```bash
+cp .env.example .env
+# Then edit .dev.vars with your actual values
+```
+
+The `.env` file is automatically loaded by Wrangler during `npm run dev` and is gitignored for security.
+
+#### Production Deployment
+
+For production, set secrets using Wrangler CLI:
+
+```bash
+wrangler secret put DATABASE_URL
+wrangler secret put JWT_SECRET
+```
+
+These secrets are securely stored and accessible via `c.env` in your Worker code.
 
 ### Cloudflare Bindings
 
